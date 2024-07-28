@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Formulaire</title>
+  </head>
+  <body
+    class="flex justify-center items-center bg-black p-2 h-screen font-mono"
+  >
+    <form
+      class="w-6/12 flex flex-col justify-center item-center visible"
+      id="form"
+    >
+      <label for="inputName" class="text-white text-center" id="labelName"
+        >Entrer votre prénom
+      </label>
+      <input
+        type="text"
+        autocomplete="off"
+        class="input input-bordered border-[#2F97C1] my-2 w-6/12 rounded-lg text-center flex self-center bg-white text-black"
+        id="inputName"
+      />
+      <span id="spanName"></span>
+      <label for="inputAge" class="text-white text-center" id="labelAge"
+        >Entrer votre age
+      </label>
+      <input
+        type="text"
+        autocomplete="off"
+        class="input input-bordered border-[#2F97C1] my-2 w-6/12 rounded-lg text-center flex self-center bg-white text-black"
+        id="inputAge"
+      />
+      <span id="spanAge"></span>
+      <button
+        type="submit"
+        class="btn btn-secondary w-4/12 my-5 font-mono font-thin align-center flex self-center text-white"
+        id="btnSend"
+      >
+        Envoyer
+      </button>
+    </form>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
